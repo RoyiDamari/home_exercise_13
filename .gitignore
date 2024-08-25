@@ -1,0 +1,15 @@
+# Ignore everything by default
+*
+
+# Don't ignore Python files
+!*.py
+
+# Don't ignore .gitignore file itself
+!.gitignore
+
+# Ignore specific directories that might be created by your IDE or other tools
+.idea/
+.vscode/
+.venv/
+__pycache__/
+.pytest_cache/
