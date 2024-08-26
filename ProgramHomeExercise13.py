@@ -46,11 +46,8 @@ def factorial(num: int) -> int | ValueError:
     if num < 0:
         raise ValueError("factorial not defined for negative values");
 
-    if num == 0 or num == 1:
-        return 1;
-
     result: int = 1;
-    for i in range(num, 1, -1):
+    for i in range(2, num + 1):
         result *= i;
 
     return result;
