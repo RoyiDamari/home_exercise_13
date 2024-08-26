@@ -64,7 +64,7 @@ def test_check_validity_error():
     assert str(ex.value) == "illegal choice";
 
 
-def test_check_winner_rock_rock():
+def test_check_winner():
     # Arrange
     x: list[list[str]] = [['rock', 'rock'], ['rock', 'paper'], ['rock', 'scissors'],
                           ['paper', 'rock'], ['paper', 'paper'], ['paper', 'scissors'],
