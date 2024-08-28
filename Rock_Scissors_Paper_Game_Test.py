@@ -56,9 +56,8 @@ def test_check_validity_error():
     # Arrange
     x: str = "p";
 
-    # Act
     with pytest.raises(ValueError) as ex:
-        actual: int = rps.check_validity(x)
+        rps.check_validity(x)
 
     # Assert
     assert str(ex.value) == "illegal choice";
@@ -88,9 +87,8 @@ def test_check_winner_error():
     x: int = 5;
     y: int = 2;
 
-    # Act
     with pytest.raises(ValueError) as ex:
-        actual: int = rps.check_winner(x, y);
+        rps.check_winner(x, y);
 
     # Assert
     assert str(ex.value) == "illegal game option";
