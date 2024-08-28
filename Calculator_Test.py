@@ -55,8 +55,8 @@ def test_power_zero():
 
 def test_sqrt():
     # Arrange
-    x: int = 25;
-    expected: int = 5;
+    x: float = 25;
+    expected: float = 5;
 
     # Act
     actual: float = calc.sqrt(x);
