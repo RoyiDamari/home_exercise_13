@@ -72,13 +72,10 @@ def test_sqrt_error():
     # Arrange
     x: int = -5;
 
-    # Act
     with pytest.raises(ValueError) as ex:
-        actual: float = calc.sqrt(x);
+        calc.sqrt(x);
 
-    # # Assert
-    # assert True;
-
+  
 
 # i
 
@@ -222,9 +219,8 @@ def test_factorial_minus_three():
     # Arrange
     x: int = -3;
 
-    # Act
     with pytest.raises(ValueError) as ex:
-        actual: int = calc.factorial(x);
+        calc.factorial(x);
 
     # Assert
     assert str(ex.value) == "factorial not defined for negative values";
