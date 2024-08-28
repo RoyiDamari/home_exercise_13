@@ -38,7 +38,7 @@ def test_check_validity_paper():
     assert actual == expected;
 
 
-def test_check_validity_latter():
+def test_check_validity_letters():
     # Arrange
     x: list[str] = ['ROCK', 'SCISSORS', 'PAPER', 'rock', 'scissors', 'paper'];
     expected: list[int] = [2, 1, 0, 2, 1, 0];
