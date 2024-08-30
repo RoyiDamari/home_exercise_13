@@ -7,17 +7,11 @@ def power(num: int, p: int) -> int:
     return pow(num, p);
 
 
-print(power(2, 3));
-
-
 # b
 
 
 def sqrt(num: int) -> float:
     return math.sqrt(num);
-
-
-print(sqrt(9));
 
 
 # c
@@ -39,8 +33,6 @@ def is_prime(num: int) -> bool:
     return True;
 
 
-print(is_prime(7));
-
 
 def factorial(num: int) -> int | ValueError:
     if num < 0:
@@ -50,7 +42,11 @@ def factorial(num: int) -> int | ValueError:
     for i in range(2, num + 1):
         result *= i;
 
+
     return result;
 
-
-print(factorial(5));
+if __name__ == "__main__":
+    print(power(2, 3));
+    print(is_prime(7));;
+    print(sqrt(9));
+    print(factorial(5));
